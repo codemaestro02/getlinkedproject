@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    font-family: var(--bodyText);
+}
+
+@font-face{
+    font-family:clash display;
+    font-style:normal;
+    font-weight:400;
+    src:local('Clash Display'),url(https://fonts.cdnfonts.com/s/65008/ClashDisplayRegular.woff) format('woff')
+}
+@font-face{
+    font-family:clash display;
+    font-style:normal;
+    font-weight:200;
+    src:local('Clash Display'),url(https://fonts.cdnfonts.com/s/65008/ClashDisplayExtralight.woff) format('woff')
+}
+@font-face{
+    font-family:clash display;
+    font-style:normal;
+    font-weight:300;
+    src:local('Clash Display'),url(https://fonts.cdnfonts.com/s/65008/ClashDisplayLight.woff) format('woff')
+}
+@font-face{
+    font-family:clash display;
+    font-style:normal;
+    font-weight:500;
+    src:local('Clash Display'),url(https://fonts.cdnfonts.com/s/65008/ClashDisplayMedium.woff) format('woff')
+}
+@font-face{
+    font-family:clash display;
+    font-style:normal;
+    font-weight:600;
+    src:local('Clash Display'),url(https://fonts.cdnfonts.com/s/65008/ClashDisplaySemibold.woff) format('woff')
+}
+@font-face{
+    font-family:clash display;
+    font-style:normal;
+    font-weight:700;
+    src:local('Clash Display'),url(https://fonts.cdnfonts.com/s/65008/ClashDisplayBold.woff) format('woff')
+}
+
+:root{
+    --primary: #D434FE;
+    --secondary: #903AFF;
+    --dark: #150E28;
+    --gradient: linear-gradient(var(--secondary), var(--primary), 0deg);
+    --bodyText: "Montserrat", sans-serif;
+    --headingText: "clash display", sans-serif;
+    --someText: "Typo Hoop Demo Regular", sans-serif;
+    --someOtherText: "Made Tommy Outline", sans-serif;
+}
+
+.nav-brand{
+    font-family: var(--headingText);
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+}
+
+.primary{
+    color: var(--secondary);
+}
+
