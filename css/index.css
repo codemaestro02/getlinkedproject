@@ -1,64 +1,222 @@
+@import url('https://fonts.cdnfonts.com/css/typo-hoop-demo');
+@import url('https://fonts.cdnfonts.com/css/made-tommy-outline');
+@import url('../fonts/ClashDisplay_Complete/Fonts/WEB/css/clash-display.css');
+
+/* font-family: 'ClashDisplay-Variable';
+font-family: 'ClashDisplay-Extralight';
+font-family: 'ClashDisplay-Light';
+font-family: 'ClashDisplay-Regular';
+font-family: 'ClashDisplay-Medium';
+font-family: 'ClashDisplay-Semibold';
+font-family: 'ClashDisplay-Bold'; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 *{
     box-sizing: border-box;
-    font-family: var(--bodyText);
+    font-weight: 300;
+    margin: 0;
+    color: var(--white);
 }
 
-@font-face{
-    font-family:clash display;
-    font-style:normal;
-    font-weight:400;
-    src:local('Clash Display'),url(https://fonts.cdnfonts.com/s/65008/ClashDisplayRegular.woff) format('woff')
+body{
+    width: 100%;
+    background-color: var(--dark);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
 }
-@font-face{
-    font-family:clash display;
-    font-style:normal;
-    font-weight:200;
-    src:local('Clash Display'),url(https://fonts.cdnfonts.com/s/65008/ClashDisplayExtralight.woff) format('woff')
-}
-@font-face{
-    font-family:clash display;
-    font-style:normal;
-    font-weight:300;
-    src:local('Clash Display'),url(https://fonts.cdnfonts.com/s/65008/ClashDisplayLight.woff) format('woff')
-}
-@font-face{
-    font-family:clash display;
-    font-style:normal;
-    font-weight:500;
-    src:local('Clash Display'),url(https://fonts.cdnfonts.com/s/65008/ClashDisplayMedium.woff) format('woff')
-}
-@font-face{
-    font-family:clash display;
-    font-style:normal;
-    font-weight:600;
-    src:local('Clash Display'),url(https://fonts.cdnfonts.com/s/65008/ClashDisplaySemibold.woff) format('woff')
-}
-@font-face{
-    font-family:clash display;
-    font-style:normal;
-    font-weight:700;
-    src:local('Clash Display'),url(https://fonts.cdnfonts.com/s/65008/ClashDisplayBold.woff) format('woff')
-}
+
 
 :root{
     --primary: #D434FE;
     --secondary: #903AFF;
     --dark: #150E28;
-    --gradient: linear-gradient(var(--secondary), var(--primary), 0deg);
-    --bodyText: "Montserrat", sans-serif;
-    --headingText: "clash display", sans-serif;
-    --someText: "Typo Hoop Demo Regular", sans-serif;
-    --someOtherText: "Made Tommy Outline", sans-serif;
+    --white: white;
+    --button-gradient: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
 }
 
-.nav-brand{
-    font-family: var(--headingText);
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: white;
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.primary{
-    color: var(--secondary);
+.button a{
+    display: contents;
+    width: 100%;
+    height: 100%;
 }
 
+.button button{
+    background-image: var(--button-gradient);
+    height: 40px;
+    width: 130px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    
+}
+
+.button button:hover{
+    scale: 0.95;
+    box-shadow: none;
+    
+    
+}
+
+h1, h2{
+    font-family: 'ClashDisplay-Bold', sans-serif;
+    font-weight: 700;
+}
+
+.section-one{
+    width: 100%;
+    height: 100%;
+}
+
+.section-two{
+    width: 100%;
+    height: 100%;
+}
+
+.colored-text{
+    color: var(--primary);
+}
+
+
+main .section-one .row{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    text-align: left;
+    position: relative;
+}
+
+main .section-one .row .section-1{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 0;
+    row-gap: 30px;
+    padding-left: 100px;
+    z-index: 5;
+}
+
+main .section-one .row .section-1 .white-star{
+    margin: 30px;
+
+    width: fit-content;
+    height: 100%;
+    z-index: -1;
+}
+
+main .section-one .row .section-1 .white-star img{
+    width: 15px;
+}
+
+main .section-one .row .section-1 .title h1{
+    font-size: 50px;
+    font-style: normal;
+    line-height: normal;
+    width: fit-content;
+    position: relative;
+}
+
+main .section-one .row .section-1 .title h1 .bulb{
+    position: absolute;
+    bottom: 35px;
+    right: 20px;
+}
+
+
+main .section-one .row .section-1 .title img{
+    width: 50px;
+    margin-left: 5px;
+}
+
+main .section-one .row .section-1 p{
+    font-size: 12px;
+    line-height: 28px;
+    width: 70%;
+    font-weight: 400;
+}
+
+main .section-one .row .section-1 .timer{
+    margin-top: 15px;
+}
+
+main .section-one .row .section-1 .timer img{
+    width: 70%;
+}
+
+main .section-one .row .section-2{
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45vw;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    
+}
+
+
+main .section-one .row .section-2 .heading{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    font-weight: 700;
+    font-style: italic;
+    line-height: normal;
+    font-size: 20px;
+    padding-top: 50px;
+
+}
+
+main .section-one .row .section-2 .heading img{
+    width: 200px;
+    align-self: flex-end;
+}
+
+main .section-one .row .section-2 .illustration-big{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    position: absolute;
+    right: 0;
+}
+
+main .section-one .row .section-2 .illustration-big img{
+    background-blend-mode: hard-light;
+    position: relative;
+    right: 15%;  
+    width: 115%;
+    
+}
+
+main .section-two .row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+    grid-template-rows: auto;
+}
+
+main .section-two .row .illustration{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.illustration{
+    width: 300px;
+}
